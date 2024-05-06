@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Case Study</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Case Study</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#case-study-solarwinds-cyberattack" class="nav-link">Case Study: SolarWinds Cyberattack</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#attack-vector" class="nav-link">Attack Vector</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#vulnerabilities-exploited" class="nav-link">Vulnerabilities Exploited</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#impact" class="nav-link">Impact</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#response-strategies" class="nav-link">Response Strategies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evaluation-and-recommendations" class="nav-link">Evaluation and Recommendations</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#conclusion" class="nav-link">Conclusion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#reference" class="nav-link">Reference</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="case-study-solarwinds-cyberattack">Case Study: SolarWinds Cyberattack</h1>
+<h2 id="overview">Overview</h2>
+<p>The SolarWinds cyberattack, discovered in 2019, was a highly sophisticated supply chain attack faced by the US government and affected multiple organizations. Attackers compromised the SolarWinds Orion platform, one of the best-known products from SolarWinds, an IT management software widely used to distribute malicious updates containing a backdoor called "Sunburst" or "Solorigate" or "UNC2452".</p>
+<h2 id="attack-vector">Attack Vector</h2>
+<p>The primary attack vector in the SolarWinds breach was the compromise of the software supply chain. This attack was made on SolarWinds' Orion software. Attackers injected malware into this software used for updates. This allowed malware from a trusted source to infiltrate many organizations, and the flawed updates were then distributed to SolarWinds customers, allowing attackers to gain unauthorized access to their networks.</p>
+<h2 id="vulnerabilities-exploited">Vulnerabilities Exploited</h2>
+<ul>
+<li>Lack of Code Integrity Checks: SolarWinds' development environment lacked strong code integrity checks, allowing malicious code to be inserted undetected.</li>
+<li>Inadequate Endpoint Detection: The malware is designed to evade traditional antivirus solutions, making it difficult to detect using traditional endpoint security measures.</li>
+<li>Limited Network Segmentation: Once inside a network, the malware had the ability to move laterally, exploit limited network segmentation, and access potentially sensitive data.</li>
+</ul>
+<p>These vulnerabilities in SolarWinds Orion software were used by attackers to inject malware. Having signed software updates enabled attackers to distribute their malware along with the updates.</p>
+<h2 id="impact">Impact</h2>
+<p>Many organizations, including government agencies and private companies, have reported unauthorized access to their systems. Many major organizations and federal agencies were affected by the attack. Leakage of sensitive data threatened national security. Detection and cleanup of the outbreak, cost of remediation, and potential legal action resulted in significant financial losses for affected organizations. The incident caused serious damage to SolarWinds' reputation and impacted customer trust.</p>
+<h2 id="response-strategies">Response Strategies</h2>
+<p>SolarWinds acknowledged the attack and quickly provided customers with updates and patches to mitigate the vulnerability on its Orion platform. Affected organizations reported the breach to their stakeholders, customers, and the public to maintain transparency. Both SolarWinds and affected organizations conducted extensive forensic investigations to understand the scope and impact of the breach and cooperated with the FBI and other federal agencies to investigate the attack and gather information about the attackers.</p>
+<h2 id="evaluation-and-recommendations">Evaluation and Recommendations</h2>
+<ul>
+<li>Organizations should implement strong code signing and verification processes to ensure the integrity of software updates, and additional controls should be added to ensure only signed updates are accepted.</li>
+<li>Deploying advanced threat detection solutions that can detect advanced malware and zero-day exploits can aid early detection and mitigation.</li>
+<li>Implementing strict network segmentation policies can limit attackers' lateral movement, preventing them from accessing sensitive data.</li>
+<li>Conducting regular security audits and penetration tests can help organizations detect and remediate vulnerabilities before they are exploited.</li>
+<li>Educating employees on the importance of cybersecurity hygiene and the risks associated with phishing attacks can help prevent similar incidents in the future. For this reason, employees and managers need to be made aware of security issues through training and awareness programs.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The SolarWinds cyberattack serves as a stark reminder of the evolving threat landscape and the importance of robust cybersecurity measures. While the affected organizations responded promptly to mitigate the impact, there are valuable lessons to be learned in terms of supply chain security, threat detection, and incident response. By implementing the suggested improvements and adopting a proactive approach to cybersecurity, organizations can better defend against sophisticated cyber threats and safeguard their critical assets.</p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://ieeexplore.ieee.org/abstract/document/9579611">https://ieeexplore.ieee.org/abstract/document/9579611</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.0
+Build Date UTC : 2024-05-06 16:42:56.198868+00:00
+-->
